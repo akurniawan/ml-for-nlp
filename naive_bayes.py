@@ -5,7 +5,7 @@ class MultinomialNaiveBayesTextClassifier(object):
     def __init__(self, min_freq: int = 3):
         self.min_freq = min_freq
         self.prior = None
-        self.counts_by_c = np.array([0])
+        self.counts_by_c = None
         self.likelihood = None
         self.total_vocabularies = 0
 
